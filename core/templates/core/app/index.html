@@ -3,6 +3,14 @@
 
 {% block index %}
 
+{% load i18n %}
+<h1>{% trans "Welcome to my site" %}</h1>
 
+<p>{% blocktrans %}This is a multilingual site.{% endblocktrans %}</p>
 
+<a href="{% url 'core:set_language' %}?language=en">English</a>
+<a href="{% url 'core:set_language' %}?language=hi">हिन्दी</a>
+
+<!-- Debug statement -->
+<p>Current language: {{ LANGUAGE_CODE }}</p>
 {% endblock index %}
