@@ -12,7 +12,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-            delay: 2500,
+            delay: 2500,slidesPerView: 5,
             disableOnInteraction: false
         },
         pagination: {
@@ -33,5 +33,41 @@
 </script>
 
 <script>
-    var bank_buttons=document.querySelector(".bank-buttons")
+    var swiper = new Swiper(".mySwipernew", {
+        slidesPerView: 4,  
+        spaceBetween: 0,
+        speed: 800,
+        loop: true,  
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    document.querySelectorAll('.swiper-slide').forEach(function(slide) {
+        slide.addEventListener('click', function() {
+            // Hide all content divs
+            document.querySelectorAll('.bank-button-detail').forEach(function(detail) {
+                detail.style.display = 'none';
+            });
+
+            // Show the clicked content div
+            var target = this.getAttribute('data-target');
+            var targetElement = document.querySelector('.' + target);
+            if (targetElement) {
+                targetElement.style.display = 'block';
+            }
+
+            document.querySelectorAll('.swiper-slide').forEach(function(slide) {
+            slide.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked swiper slide
+        this.classList.add('active');
+        });
+    });
 </script>

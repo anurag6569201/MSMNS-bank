@@ -188,15 +188,17 @@
     .bank-buttons-details div {
         font-size: 14px;
     }
-
-    .bank-button-detail-1 {
+    .bank-button-detail {
         width: 100%;
+        display: none;
     }
 
-    .bank-button-detail-1 * {
+    .bank-button-detail * {
         color: #444;
     }
-
+    .bank-button-detail:nth-child(1){
+        display: block;
+    }
     table {
         width: 100%;
         border-collapse: collapse;
@@ -216,5 +218,37 @@
 
     tr:nth-child(even) {
         background-color: #f9f9f9;
+    }
+    .bank-buttons{
+        font-size: 2.5em;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        padding: .2em 1.5em;
+    }
+    .bank-buttons .swiper-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bank-btns{
+        border: 1px solid transparent;
+        background-color: var(--background-blue-shade);
+        border-radius: 1.5em;
+        padding: .3em 1em;
+        cursor: pointer;
+    }
+    .swiper-slide.active .bank-btns{
+        box-shadow: 0 0 5px 5px var(--background-pink-shade);
+    }
+    .swiper-slide:nth-child(1).active .bank-btns{
+        box-shadow: 0 0 5px 5px var(--background-pink-shade);
+    }
+    footer{
+        background-color: var(--background-blue-shade);
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
