@@ -1,0 +1,12 @@
+:root {
+    --background: #fafafa;
+    --background-pink-shade: #5E0035;
+    --background-blue-shade: #13a9e1;
+}
+*{
+    color: white;
+}
+body{
+    font-size: 10px;
+    background-color: var(--background);
+}
