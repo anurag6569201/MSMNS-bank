@@ -4,7 +4,8 @@
     align-items:normal;
     justify-content: space-between;
     padding-bottom: 1em;
-    box-shadow: 0 0 4em .5em black;
+    z-index: 1005;
+    position: relative;
 }
 .navbar-container-wrapper{
     width: 100%;
@@ -184,14 +185,19 @@ label {
 
 .main-navbar{
     background-color: var(--background-pink-shade);
+    z-index: 1000;
 }
 .main-navbar .navbar-links-tag{
     gap: 1.3em;
 }
+.main-navbar .nav-link.active,
 .main-navbar .nav-link{
     font-size: 1.4em;
     color: var(--background);
     font-weight: 600;
+}
+.dropdown .show{
+    color: var(--background)!important;
 }
 .dropdown:hover .dropdown-menu {
     display: block;
