@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function resizeText(action) {
     const elements = document.querySelectorAll('.font_resizer');
-    
+
     if (elements.length === 0) {
         console.error('No elements found with the specified classes');
         return;
@@ -93,4 +93,24 @@ function resizeText(action) {
             element.style.fontSize = initialSizes[element.className]; // Reset to initial font size
         }
     });
+}
+
+// translations
+function loadGoogleTranslate() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.body.appendChild(script);
+}
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'hi',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_element');
+}
+
+function resetTranslation() {
+    location.reload();
 }

@@ -11,6 +11,10 @@
 .navbar-container-wrapper{
     width: 100%;
 }
+footer,
+.navbar-container-wrapper *.font_resizer{
+    color: #ffffff;
+}
 .topmost-navbar{
     display: flex;
     align-items:center;
@@ -19,6 +23,7 @@
     padding: .5em 1.5em;
     width: 100%;
 }
+.google-translating-buttons button,
 .textsize button {
     border: 1.5px solid grey;
     border-radius: 5px;

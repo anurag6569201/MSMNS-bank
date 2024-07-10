@@ -4,10 +4,17 @@
         <img src="../../../static/core/images/msmnb-english.jpg" alt="">
     </div>
     <div class="navbar-container-wrapper">
-
+        
         <!-- topmost navbar -->
         <nav class="topmost-navbar">
             <div class="datetime font_resizer">{{current_date}}</div>
+
+            <div class="google-translating-buttons">
+                <div id="google_element"></div>
+                <button onclick="loadGoogleTranslate()">Hindi</button>
+                <button onclick="resetTranslation()">English</button>
+            </div>
+            
             <a class="sitemap font_resizer">Site-Map</a>
             <div class="textsize">
                 <button onclick="resizeText('increase')">A+</button>

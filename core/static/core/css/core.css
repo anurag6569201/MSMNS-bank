@@ -3,12 +3,10 @@
     --background-pink-shade: #fdbd30;
     --background-blue-shade: #13a9e1;
 }
-*{
-    color: white;
-}
 body{
     font-size: 10px;
     background-color: var(--background);
+    top: 0 !important;
 }
 
 footer {
@@ -17,4 +15,23 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.skiptranslate,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc,
+.VIpgJd-yAWNEb-L7lbkb,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-l4eHX-hSRGPd,
+.goog-logo-link{
+    display: none !important;
+}
+.goog-te-gadget{
+    color: transparent !important;
+    position: relative;
+}
+.goog-te-combo{
+    position: absolute;
+}
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q{
+    background-color: transparent !important;
+    box-shadow: none;
 }
