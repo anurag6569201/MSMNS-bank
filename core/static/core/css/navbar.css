@@ -6,6 +6,7 @@
     padding-bottom: 1em;
     z-index: 1005;
     position: relative;
+    box-shadow: 0 0 15px 1px #002d5e;
 }
 .navbar-container-wrapper{
     width: 100%;
@@ -186,6 +187,9 @@ label {
 .main-navbar{
     background-color: var(--background-pink-shade);
     z-index: 1000;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 15px 2px #002d5e;
 }
 .main-navbar .navbar-links-tag{
     gap: 1.3em;

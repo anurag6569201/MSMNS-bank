@@ -1,0 +1,145 @@
+{% load static %}
+<nav class="navbar-container">
+    <div class="bank-navbar-logo">
+        <img src="../../../static/core/images/msmnb-english.jpg" alt="">
+    </div>
+    <div class="navbar-container-wrapper">
+
+        <!-- topmost navbar -->
+        <nav class="topmost-navbar">
+            <div class="datetime font_resizer">{{current_date}}</div>
+            <a class="sitemap font_resizer">Site-Map</a>
+            <div class="textsize">
+                <button onclick="resizeText('increase')">A+</button>
+                <button onclick="resizeText('default')">A</button>
+                <button onclick="resizeText('decrease')">A-</button>
+            </div>
+            <div class="themebutton">
+                <div class="btn-container">
+                    <label class="switch btn-color-mode-switch">
+                        <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                        <label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark"
+                            for="color_mode"></label>
+                    </label>
+                </div>
+            </div>
+        </nav>
+        <hr style="padding: 0;margin: 0;">
+
+        <!-- main details navbar -->
+        <nav class="center-navbar">
+            <div class="bank--navbar-details">
+                <span class="bank-navbar-title font_resizer">MAA SHARDA MAHILA NAGRIK SAHAKARI BANK, MAIHAR</span>
+                <span class="bank-navbar-address font_resizer">Head office:- Kamla Market, Ghanta Ghar Road, Maihar- JILA
+                    SATNA,(M.P), pincode:-485771</span>
+            </div>
+        </nav>
+
+    </div>
+</nav>
+<nav class="main-navbar navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-links-tag">
+                <li class="nav-item">
+                    <a class="nav-link font_resizer" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_resizer" href="#">Profile</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Financial Health</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Key Commitments</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item font_resizer" href="#">Chairmen's Message</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Board Of Directors</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Bank Network
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_resizer" href="#">Bank Branches</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Bank Soceity</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Loan
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_resizer" href="#">Agriculture Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Individual Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">EMI Calculator</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">FD Maturity Calculator</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Deposite
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_resizer" href="#">Saving A/C</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Current A/C</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Fixed Diposite / Double Diposite</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Recurring Deposit</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        IFS Code
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_resizer" href="#">OTHERS DCCB Bank IFSC Code</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">DCCB dewas Branches IFSC Code</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font_resizer" aria-current="page" href="#">ATM SERVICES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        IFS Code
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_resizer" href="#">Other</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Photo Gallery</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Forms</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Downloads</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Circulars</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Statutory Decl
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item font_resizer" href="#">Balance Sheet</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Profit & Loss</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font_resizer" aria-current="page" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
