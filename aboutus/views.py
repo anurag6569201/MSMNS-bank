@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def aboutmain(request):
+    context={
+
+    }
+    return render(request, "aboutus/app/aboutmain.html", context)

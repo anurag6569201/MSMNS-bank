@@ -114,3 +114,16 @@ function googleTranslateElementInit() {
 function resetTranslation() {
     location.reload();
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleSwitch = document.getElementById('color_mode');
+
+    toggleSwitch.addEventListener('change', function() {
+        if (toggleSwitch.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    });
+});

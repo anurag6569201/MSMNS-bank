@@ -224,6 +224,7 @@ tr:nth-child(even) {
 
 .bank-buttons .swiper-slide {
     display: flex;
+    background-color: var(--background);
     align-items: center;
     justify-content: center;
 }

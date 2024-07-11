@@ -24,6 +24,8 @@ urlpatterns = [
 
     # apps urls
     path('',include('core.urls')),
+    path('info/',include('aboutus.urls')),
+    path('inoperate/',include('inoperate.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

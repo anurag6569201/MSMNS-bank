@@ -3,10 +3,19 @@
     --background-pink-shade: #fdbd30;
     --background-blue-shade: #13a9e1;
 }
+[data-theme="dark"] {
+    --background: #353535;
+    --background-pink-shade: #fdbd30;
+    --background-blue-shade: #13a9e1;
+    --text-color: #ffffff;
+}
 body{
     font-size: 10px;
     background-color: var(--background);
     top: 0 !important;
+}
+body *.card{
+    background-color: transparent;
 }
 
 footer {
@@ -16,6 +25,8 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+/* google translations */
 .skiptranslate,
 .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc,
 .VIpgJd-yAWNEb-L7lbkb,
