@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'captcha',
-    
+    'import_export',
+
     # custom app
     'core',
     'aboutus',
