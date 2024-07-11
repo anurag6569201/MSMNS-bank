@@ -1,7 +1,64 @@
-{% extends 'aboutus/partial/base.html' %}
+{% extends 'inoperate/partial/base.html' %}
 {% load static %}
 
 {% block index %}
-
+<div class="alert-heading">
+    <div class="container-fluid">
+        <span>Search Inoperative Account Holders(More Than 10 Years) as on 30th June 2024</span>
+    </div>
+</div>
+<div class="container-fluid mt-4">
+    <p class="inoperate-info">According to the Reserve Bank of India (RBI) guidelines, an account is classified as inoperative or dormant if there have been no transactions for over two years. Customers are advised to reactivate their inoperative accounts by visiting the bank with valid identification and address proof. The RBI mandates that banks should not levy charges for activation and should not impose any restrictions on the deposit of money in such accounts.</p>
+</div>
+<div class="container-fluid row">
+    <div class="col-md-6">
+        <form method="post" class="search-form-inoperate">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+    <h6>Searched result</h6>
+    <hr style="margin: 0;">
+        {% if results %}
+            {% for person in results %}
+            <table class="table table-striped mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <div class="table-row-heading-flex">
+                                <span class="material-symbols-outlined">person</span> <span>Name</span>
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="table-row-heading-flex">
+                                <span class="material-symbols-outlined">manage_accounts</span> <span>Account Number</span>
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="table-row-heading-flex">
+                                <span class="material-symbols-outlined">currency_rupee</span> <span>Amount</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="inoperative_name">{{ person.name }}</td>
+                        <td class="inoperative_account">{{ person.account_number }}</td>
+                        <td class="inoperative_amount">{{ person.amount }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            {% endfor %}
+        {% else %}
+            <div style="display: flex;align-items: center;justify-content: center;position: relative;" class="h-100">
+                <span class="material-symbols-outlined" style="font-size: 15em;">search</span>
+                <span class="inoperate-search-text">No Searched query yet!</span>
+            </div>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock index %}
