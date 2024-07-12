@@ -1,0 +1,32 @@
+.aboutmain p{
+    font-size: 1.4em;
+}
+.img-fluid {
+    max-width: 90%;
+    border-radius: 0.5rem;
+}
+
+/* financialhealth */
+.financialhealth p{
+    font-size: 1.4em;
+}
+
+.financialhealth ul li{
+    font-size: 1.4em;
+}
+
+/* commitment */
+.commitment p,
+.commitment ul{
+    font-size: 1.4em;
+}
+
+/* chairman */
+.chairman p{
+    font-size: 1.4em;
+}
+
+/* directors */
+.directors p{
+    font-size: 1.4em;
+}
