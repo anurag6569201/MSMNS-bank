@@ -1,0 +1,291 @@
+{% extends 'loan/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+
+<div class="container-fluid mt-4 homeloan">
+    <div class="row mt-4">
+        <div class="bank-buttons">
+            <div class="swiper mySwipernew" style="height: 40px">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-div" data-target="bank-button-detail-6"><span
+                        class="bank-btns font_resizer">Documents required</span></div>
+                    <div class="swiper-slide swiper-div active" data-target="bank-button-detail-1"><span
+                            class="bank-btns font_resizer">Benifits</span></div>
+                    <div class="swiper-slide swiper-div" data-target="bank-button-detail-2"><span
+                            class="bank-btns font_resizer">Purpose</span></div>
+                    <div class="swiper-slide swiper-div" data-target="bank-button-detail-3"><span
+                            class="bank-btns font_resizer">Features</span></div>
+                    <div class="swiper-slide swiper-div" data-target="bank-button-detail-4"><span
+                            class="bank-btns font_resizer">Eligibility</span></div>
+                    <div class="swiper-slide swiper-div" data-target="bank-button-detail-5"><span
+                            class="bank-btns font_resizer">Intrest Rate</span></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="bank-buttons-details">
+            <div class="col-md-12 bank-button-detail-1 mt-4 container bank-button-detail font_resizer">
+                <li>Lower Rate of Interest.</li>
+                <li>Reducing Balance Interest Rate.</li>
+                <li>No Prepayment penalty.</li>
+                <li>Avail loan for Repairs/ Renovation of house/flat.</li>
+                <li>Financing to acquire 2nd house/flat.</li>
+                <li>Minimal processing charges.</li>
+            </div>
+
+            <div class="col-md-12 bank-button-detail-2 mt-4 container bank-button-detail font_resizer">
+                <li>Purchase of a ready built house / flat.</li>
+                <li>Construction of house / flat.</li>
+                <li>Purchase of a site and construction of a house thereon. However, loan for purchase of only site
+                    shall not be considered under Housing Loans. In case of composite Housing loans, utilisation of loan
+                    amount for purchase of plot is restricted to 60% of eligible / sanctioned loan amount.</li>
+                <li>Housing Loan can be sanctioned up to Rs.15.00 Lakh to Repairs/Renovations subject to completion of
+                    three years from the commencement of the repayment date of the housing loan.</li>
+                <li>For acquiring second house/flat where the borrower is already having a House/flat with or without
+                    loan.</li>
+            </div>
+
+            <div class="col-md-12 bank-button-detail-3 mt-4 container bank-button-detail font_resizer">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Loan Quantum</td>
+                            <td>
+                                <li>4 times of Annual Gross Income</li>
+                                <li>Higher quantum 5 years of Gross Income can be considered on a case to case basis
+                                    subject to certain conditions</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Margin (on Project Cost)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Processing Charges</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Security</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Repayment</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Repayment Holiday</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Prepayment</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-12 bank-button-detail-4 mt-4 container bank-button-detail font_resizer">
+                <li>All Bank Female Members Must Have Minimum age 21 years and maximum age 60</li>
+                <li>The loans for above purposes shall be sanctioned only for the properties which are non-agricultural
+                    having valid documents for usage for Housing / non agricultural purposes.</li>
+            </div>
+
+            <div class="col-md-12 bank-button-detail-5 mt-4 container bank-button-detail font_resizer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type of Loan</th>
+                            <th>Effective from 01.09.2019 to Till Now</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Long term Loan</td>
+                            <td>9%</td>
+                        </tr>
+                        <tr>
+                            <td>Mid-Term Loans Shop Loans</td>
+                            <td>11%</td>
+                        </tr>
+                        <tr>
+                            <td>Personal loans</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>Cash Credit limit</td>
+                            <td>12%</td>
+                        </tr>
+                        <tr>
+                            <td>Fixed Deposit Against Loan</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-12 bank-button-detail-6 mt-4 container bank-button-detail font_resizer">
+
+                <li>Stipulated Loan Application with 2 passport size photos of applicant / Co-applicants or guarantor
+                </li>
+                <li>KYC documents of applicant/ Co-applicants or guarantor</li>
+                <li><b>Proof of Identity</b> <br>PAN CARD/Driver’s License/Voter ID /Passport/ Aadhar Card etc.</li>
+                <li><b>Proof of Residence</b> <br>Driver’s License/Voter Id/Passport / Aadhar Card / Electricity
+                    Bill/Telephone Bill etc., /Business Proof related GST and others.</li>
+                <li>Age proof of the applicant/ Co-applicants.</li>
+                <li>PAN card (photo copy)</li>
+                <li><b>Salaried individuals</b> <br>Bank statement of salary account for past 6 months. <br>Proof of
+                    confirmed service of 3 years: - <br>
+                    Form No.16 & ITR if any supported by Employee ID/Appointment Letter/ Confirmation in services
+                    evidencing duration of the employment/3 years IT Returns</li>
+                <li><b>Business/Self-Employed individuals</b></li>
+                <ul>
+                    <li>Balance Sheet and Profit & Loss account for past three assessment years.</li>
+                    <li>ITR/ITAO filed for past three assessment years.</li>
+                    <li>In case of agricultural income is also included in ITR, Copy of lands records.</li>
+                    <li>Statement of Bank Account.</li>
+                    <li>Brief note on the nature of business.</li>
+                    <li>Proof of Business</li>
+                </ul>
+                <li><b>NRI applicants</b></li>
+                <ul>
+                    <li>Proof of identity <br>Copy of first 4 pages of passport and page with visa stamp, or IC/PIO
+                        card.</li>
+                    <li>Valid work permit</li>
+                    <li>Copy of salary certificate duly attested by Indian Embassy/ Consulate/ Employer</li>
+                    <li>Account statement/ passbook of overseas bank showing salary and savings.</li>
+                    <li>Notarized Power of Attorney, if applicant proposes to authorize a third party to execute the
+                        documents/ complete the mortgage formalities/ avail the loan instalments.</li>
+                </ul>
+                <li><b>Documents required based on the loan purpose :</b></li>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Document</th>
+                            <th>For Construction of House</th>
+                            <th>For Purchase of Ready-Built House</th>
+                            <th>For Purchase of Flats</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Title deeds of the property and link documents for the last 13 years</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Title Deeds of Builder for last 13 years</td>
+                        </tr>
+                        <tr>
+                            <td>Encumbrance Certificate for past 13 years</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Khata Certificate/ Khata Extract</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Upto date tax paid receipts of the property</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Copy of the approved plan for the proposed construction / extension / addition</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Sketch of Flat</td>
+                        </tr>
+                        <tr>
+                            <td>An affidavit-cum-undertaking</td>
+                            <td>An affidavit-cum-undertaking that applicant shall not violate the sanctioned plan,
+                                construction shall be strictly as per the sanctioned plan</td>
+                            <td>An affidavit-cum-undertaking from the applicant declaring that the built up property has
+                                been constructed as per the sanctioned plan and/or building bye-laws</td>
+                            <td>Sanctioned Plan & License from competent authority</td>
+                        </tr>
+                        <tr>
+                            <td>Completion Certificate</td>
+                            <td>Completion Certificate (within 3 months of completion of construction)</td>
+                            <td>Completion Certificate</td>
+                            <td>Copy of Occupancy Certificate by Local Authority</td>
+                        </tr>
+                        <tr>
+                            <td>Allotment letter of Co-operative Society/Housing Board (wherever applicable)</td>
+                            <td>Yes</td>
+                            <td>Agreement of sale of property</td>
+                            <td>Agreement of Sale with Applicant</td>
+                        </tr>
+                        <tr>
+                            <td>In case of allotment of a plot by the Society, documents to be submitted are as follows
+                            </td>
+                            <td colspan="3">
+                                <ul>
+                                    <li>Extract of the Resolution</li>
+                                    <li>Bye laws of the Society</li>
+                                    <li>Payment receipts (original)</li>
+                                    <li>Share Certificate (original)</li>
+                                    <li>Title Certificate</li>
+                                    <li>Property Register card extract</li>
+                                    <li>Building Commencement Certificate</li>
+                                    <li>Original Registration Receipts</li>
+                                    <li>Original Stamp Duty Receipts (if any)</li>
+                                    <li>Original receipts issued by the Builder to the Purchaser of the flat</li>
+                                    <li>Certified copy of the Building commencement certificate</li>
+                                    <li>Builder’s Demand Notice</li>
+                                    <li>Property Register card extract</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NOC from Society/Association/Builder/Housing Board (wherever applicable)</td>
+                            <td>Yes</td>
+                            <td></td>
+                            <td>NOC from Banker of Builder (wherever Project finance has been availed by the builder)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Copy of Lease Deed (wherever applicable)</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Original Sale Deed executed by builder in favour of purchaser</td>
+                        </tr>
+                        <tr>
+                            <td>KYC documents of seller of property</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock index %}

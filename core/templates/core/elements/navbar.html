@@ -84,11 +84,14 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Loan
+                        Loans
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item font_resizer" href="#">Agriculture Loan</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">Individual Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'loans:home' %}">Home Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Vehicle Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">Education Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'loans:property' %}">Property/Mortgage Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="#">MSME Loan</a></li>
                         <li><a class="dropdown-item font_resizer" href="#">EMI Calculator</a></li>
                         <li><a class="dropdown-item font_resizer" href="#">FD Maturity Calculator</a></li>
                     </ul>

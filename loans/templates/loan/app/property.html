@@ -1,0 +1,54 @@
+{% extends 'loan/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+<style>
+    table {
+        width: 100%;
+        font-size: 1.4em;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<div class="container mt-5">
+    <table>
+        <thead>
+            <tr>
+                <th>Type of Loan</th>
+                <th>Effective from 01.09.2019 to Till Now</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Long term Loan</td>
+                <td>9%</td>
+            </tr>
+            <tr>
+                <td>Mid-Term Loans Shop Loans</td>
+                <td>11%</td>
+            </tr>
+            <tr>
+                <td>Personal loans</td>
+                <td>12%</td>
+            </tr>
+            <tr>
+                <td>Cash Credit limit</td>
+                <td>12%</td>
+            </tr>
+            <tr>
+                <td>Fixed Deposit Against Loan</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock index %}

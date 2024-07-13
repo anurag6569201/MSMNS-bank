@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'core',
     'aboutus',
     'inoperate',
+    'loans',
 ]
 
 MIDDLEWARE = [
