@@ -9,4 +9,5 @@ urlpatterns=[
     path("commitment",views.commitment,name="commitment"),
     path("chairman",views.chairman,name="chairman"),
     path("directors",views.directors,name="directors"),
+    path("bankstaff",views.bankstaff,name="bankstaff"),
 ]

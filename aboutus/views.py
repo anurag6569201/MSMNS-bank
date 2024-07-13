@@ -32,3 +32,9 @@ def directors(request):
 
     }
     return render(request, "aboutus/app/directors.html", context)
+
+def bankstaff(request):
+    context={
+
+    }
+    return render(request, "aboutus/app/bankstaff.html", context)
