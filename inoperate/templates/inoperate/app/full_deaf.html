@@ -1,0 +1,66 @@
+{% extends 'inoperate/partial/base.html' %}
+{% load static %}
+
+{% block index %}
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+        text-align: left;
+    }
+    .page-break {
+        page-break-after: always;
+    }
+</style>
+<div class="container full_deaf">
+    <div class="all-data mt-4">
+        <a class="Download_pdf" href="{% url 'inoperate:generate_pdf' %}">Download All data (PDF)</a>
+        <a class="Download_pdf" href="{% url 'inoperate:sign-out' %}">Logout</a>
+    </div>
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <div class="table-row-heading-flex">
+                        <span>Sr. No.</span>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-row-heading-flex">
+                        <span class="material-symbols-outlined">person</span> <span>Name</span>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-row-heading-flex">
+                        <span class="material-symbols-outlined">manage_accounts</span> <span>Account Number</span>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-row-heading-flex">
+                        <span class="material-symbols-outlined">currency_rupee</span> <span>Amount</span>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for person in all_inoperate %}
+                <tr>
+                    <td class="serial_num">{{ forloop.counter }}</td>
+                    <td class="inoperative_name">{{ person.name }}</td>
+                    <td class="inoperative_account">{{ person.account_number }}</td>
+                    <td class="inoperative_amount">{{ person.amount }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock index %}

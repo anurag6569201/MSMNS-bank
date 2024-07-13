@@ -24,6 +24,7 @@
 .search-form-inoperate p .captcha{
     width: 100px;
 }
+.Download_pdf,
 .btn-login,
 .full_deaf_vew_btn,
 .search-form-inoperate button{
@@ -34,6 +35,7 @@
     font-weight: 700;
     color: var(--background-blue-shade);
 }
+.Download_pdf,
 .full_deaf_vew_btn{
     text-decoration: none;
     padding: .2em .8em;
@@ -69,5 +71,8 @@
     padding: 8px;
 }
 .inoperative .section{
+    font-size: 1.4em;
+}
+.full_deaf .serial_num{
     font-size: 1.4em;
 }

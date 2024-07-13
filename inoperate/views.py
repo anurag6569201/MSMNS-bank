@@ -31,7 +31,11 @@ def inoperate(request):
     return render(request, "inoperate/app/inoperate.html", context)
 
 def view_full_deaf(request):
-    pass
+    all_inoperate=Person.objects.all()
+    context={
+        'all_inoperate':all_inoperate,
+    }
+    return render(request, "inoperate/app/full_deaf.html", context)
 
 def login_view(request):
     if request.user.is_authenticated:
@@ -63,3 +67,23 @@ def logout_view(request):
     logout(request)
     messages.success(request, "You Logged-Out, successfully")
     return redirect("inoperate:inoperate")
+
+
+from django.template.loader import render_to_string
+from django.http import HttpResponse
+from xhtml2pdf import pisa
+
+def generate_pdf(request):
+    all_inoperate = Person.objects.all()
+    context = {'all_inoperate': all_inoperate}
+    html = render_to_string('inoperate/app/full_deaf.html', context)
+    
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="inoperative_accounts.pdf"'
+
+    pisa_status = pisa.CreatePDF(
+        html, dest=response
+    )
+    if pisa_status.err:
+        return HttpResponse('We had some errors <pre>' + html + '</pre>')
+    return response
