@@ -9,8 +9,9 @@
 </div>
 <div class="container-fluid mt-4">
     <p class="inoperate-info">The DEAF Scheme 2014 was established by the Reserve Bank of India (RBI) to promote the interests of depositors and to ensure unclaimed deposits are utilized for their benefit. Here are the key aspects of the DEAF Scheme 2014: <br><br><b>Total Inoperative Accounts (DEAF Accounts) {{no_of_account}}</b><br><b style="display: flex;align-items: center;">Total Amount Of Inoperative Accounts (DEAF Funds) {{total_amount}} <span class="material-symbols-outlined" style="font-size: 1.2em;">currency_rupee</span> </b></p>
+    <a href="{% url 'inoperate:sign-in' %}" class="full_deaf_vew_btn">View Full Preview</a>
 </div>
-<div class="container-fluid row">
+<div class="container-fluid row inoperative mt-3">
     <div class="col-md-6">
         <form method="post" class="search-form-inoperate">
             {% csrf_token %}
@@ -59,8 +60,9 @@
             </div>
         {% endif %}
     </div>
+    <hr class="mt-4">
     <div class="section">
-        <h2>Objective:</h2>
+        <h6>Objective:</h6>
         <ul>
             <li>To use unclaimed deposits for the benefit of depositors.</li>
             <li>To promote depositor education and awareness.</li>
@@ -68,7 +70,7 @@
     </div>
 
     <div class="section">
-        <h2>Transfer of Unclaimed Deposits:</h2>
+        <h6>Transfer of Unclaimed Deposits:</h6>
         <ul>
             <li>Banks are required to transfer unclaimed deposits (those that have not been operated for 10 years or more) to the DEAF.</li>
             <li>This includes savings accounts, current accounts, term deposits, and other deposit accounts.</li>
@@ -76,7 +78,7 @@
     </div>
 
     <div class="section">
-        <h2>Claiming Deposits:</h2>
+        <h6>Claiming Deposits:</h6>
         <ul>
             <li>Depositors or their legal heirs can claim the deposits transferred to the DEAF at any time.</li>
             <li>Banks will settle the claims and then claim the amount from the DEAF.</li>
@@ -84,14 +86,14 @@
     </div>
 
     <div class="section">
-        <h2>Interest on Unclaimed Deposits:</h2>
+        <h6>Interest on Unclaimed Deposits:</h6>
         <ul>
             <li>Banks may be required to pay interest on the unclaimed deposits, as per the RBI guidelines, even after the transfer to the DEAF.</li>
         </ul>
     </div>
 
     <div class="section">
-        <h2>Utilization of the Fund:</h2>
+        <h6>Utilization of the Fund:</h6>
         <ul>
             <li>The fund is used for depositor education and awareness programs.</li>
             <li>It may also be used for other purposes as specified by the RBI from time to time.</li>
@@ -99,7 +101,7 @@
     </div>
 
     <div class="section">
-        <h2>Reporting and Monitoring:</h2>
+        <h6>Reporting and Monitoring:</h6>
         <ul>
             <li>Banks must submit detailed reports on the unclaimed deposits transferred to the DEAF.</li>
             <li>The RBI monitors the transfer and utilization of funds.</li>
@@ -107,44 +109,48 @@
     </div>
 
     <div class="section">
-        <h3>Claim Process</h3>
-        <h4>Submission of Claim:</h4>
+        <h6>Claim Process</h6>
+        <ul>
+            <h6>Submission of Claim:</h6>
         <ul>
             <li>Depositors or legal heirs must submit a claim application to the bank.</li>
             <li>The application should include necessary documents, such as proof of identity and entitlement.</li>
         </ul>
 
-        <h4>Verification and Settlement:</h4>
+        <h6>Verification and Settlement:</h6>
         <ul>
             <li>The bank verifies the claim and settles the amount.</li>
             <li>The settled amount is claimed back by the bank from the DEAF.</li>
         </ul>
 
-        <h4>Interest Payment:</h4>
+        <h6>Interest Payment:</h6>
         <ul>
             <li>If applicable, interest is paid on the claimed deposits as per the prevailing guidelines.</li>
+        </ul>
         </ul>
     </div>
 
     <div class="section">
-        <h3>Depositor Awareness Initiatives</h3>
-        <h4>Education Programs:</h4>
+        <h6>Depositor Awareness Initiatives</h6>
+        <ul>
+            <h6>Education Programs:</h6>
         <ul>
             <li>The DEAF supports initiatives to educate depositors about safe banking practices, their rights, and how to manage their accounts effectively.</li>
         </ul>
 
-        <h4>Awareness Campaigns:</h4>
+        <h6>Awareness Campaigns:</h6>
         <ul>
             <li>Campaigns are conducted to inform depositors about the importance of regularly updating their account information and operating their accounts.</li>
         </ul>
 
-        <h4>Publications and Workshops:</h4>
+        <h6>Publications and Workshops:</h6>
         <ul>
             <li>The RBI and banks may publish educational materials and conduct workshops and seminars to promote financial literacy among depositors.</li>
         </ul>
+        </ul>
     </div>
 
-    <p>For detailed information, you can refer to the official RBI circular on the DEAF Scheme 2014, available on the RBI website.</p>
+    <p style="font-size: 1.4em;">For detailed information, you can refer to the official RBI circular on the DEAF Scheme 2014, available on the RBI website.</p>
 </div>
 
 {% endblock index %}

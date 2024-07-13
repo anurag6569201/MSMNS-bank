@@ -24,6 +24,7 @@
 .search-form-inoperate p .captcha{
     width: 100px;
 }
+.full_deaf_vew_btn,
 .search-form-inoperate button{
     border: 1.5px solid grey;
     border-radius: 5px;
@@ -31,6 +32,10 @@
     font-size: 14px;
     font-weight: 700;
     color: var(--background-blue-shade);
+}
+.full_deaf_vew_btn{
+    text-decoration: none;
+    padding: .2em .8em;
 }
 .inoperate-search-text{
     font-size: 1.8em;
@@ -61,4 +66,7 @@
 .table th, .table td {
     border: 1px solid #dee2e6;
     padding: 8px;
+}
+.inoperative .section{
+    font-size: 1.4em;
 }
