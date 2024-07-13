@@ -24,6 +24,7 @@
 .search-form-inoperate p .captcha{
     width: 100px;
 }
+.btn-login,
 .full_deaf_vew_btn,
 .search-form-inoperate button{
     border: 1.5px solid grey;

@@ -46,3 +46,10 @@ footer {
     background-color: transparent !important;
     box-shadow: none;
 }
+
+
+.error-messages-inoperate{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}

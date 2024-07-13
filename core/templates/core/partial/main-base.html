@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <!-- Display error messages -->
+    <div class="error-messages-inoperate">
+        {% if messages %}
+            <div class="form-group">
+                {% for message in messages %}
+                    <div class="{% if message.tags %}alert alert-{{ message.tags }}{% endif %}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
     {% include "core/elements/navbar.html" %}
     {% block mainapp %}
     {% endblock mainapp %}
