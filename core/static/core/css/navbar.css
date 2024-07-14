@@ -8,6 +8,12 @@
     position: relative;
     box-shadow: 0 0 15px 1px #002d5e;
 }
+.mobile-navbar{
+    display: none;
+}
+#offcanvasNavbar{
+    background-color: var(--background-pink-shade);
+}
 .navbar-container-wrapper{
     width: 100%;
 }
@@ -26,9 +32,9 @@ footer,
 .google-translating-buttons button,
 .textsize button {
     border: 1.5px solid grey;
-    border-radius: 5px;
+    border-radius: .5em;
     background-color: var(--background);
-    font-size: 14px;
+    font-size: 1.4em;
     font-weight: 700;
     color: var(--background-blue-shade);
 }
@@ -43,11 +49,11 @@ footer,
 .btn-container i {
     display: inline-block;
     position: relative;
-    top: -9px;
+    top: -.9em;
 }
 
 label {
-    font-size: 13px;
+    font-size: 1.3em;
     color: #424242;
     font-weight: 500;
 }
@@ -60,10 +66,10 @@ label {
 
 .btn-color-mode-switch>label.btn-color-mode-switch-inner {
     margin: 0px;
-    width: 140px;
-    height: 30px;
+    width: 10.7em;
+    height: 2em;
     background: #E0E0E0;
-    border-radius: 26px;
+    border-radius: 2.6em;
     overflow: hidden;
     position: relative;
     transition: all 0.3s ease;
@@ -74,36 +80,36 @@ label {
 .btn-color-mode-switch>label.btn-color-mode-switch-inner:before {
     content: attr(data-on);
     position: absolute;
-    font-size: 12px;
     font-weight: 500;
-    top: 6px;
+    top: 4px;
     color: var(--background-blue-shade);
-    right: 20px;
+    right: 1em;
 }
 
 .btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
     content: attr(data-off);
-    width: 70px;
-    height: 26px;
+    width: 6.5em;
+    height: 1.65em;
     background: #fff;
-    border-radius: 26px;
+    border-radius: 2.6em;
     position: absolute;
     color: var(--background-blue-shade);
-    left: 2px;
-    top: 2px;
+    left: .2em;
+    top: .2em;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0px 0px 6px -2px #111;
-    padding: 3px 0px;
+    padding: 1px 0px;
 }
 
 .btn-color-mode-switch input[type="checkbox"] {
     cursor: pointer;
-    width: 50px;
-    height: 25px;
+    width: 9em;
+    height: 2.5em;
     opacity: 0;
     position: absolute;
     top: 0;
+    right: 3em;
     z-index: 1;
     margin: 0px;
 }
@@ -121,8 +127,9 @@ label {
 
 .btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:before {
     content: attr(data-off);
+    left: 1em;
+    top: .3em;
     right: auto;
-    left: 20px;
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked~.alert {
@@ -142,7 +149,7 @@ label {
 .sitemap,
 .datetime{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4em;
     color: white;
     text-decoration: none;
 }

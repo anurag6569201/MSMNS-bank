@@ -24,7 +24,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwipernew", {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 0,
     speed: 800,
     loop: true,
@@ -35,6 +35,11 @@ var swiper = new Swiper(".mySwipernew", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        560: {
+            slidesPerView:4,
+        },
     },
 });
 
@@ -116,7 +121,10 @@ function resetTranslation() {
 }
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
+    const toggler = document.querySelector('.navbar-toggler');
+    const collapse = document.querySelector('.navbar-collapse');
     const toggleSwitch = document.getElementById('color_mode');
 
     toggleSwitch.addEventListener('change', function() {
@@ -124,6 +132,17 @@ document.addEventListener('DOMContentLoaded', function() {
             document.documentElement.setAttribute('data-theme', 'dark');
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
+        }
+    });
+
+    toggler.addEventListener('click', function() {
+        collapse.classList.toggle('show');
+    });
+
+    // Optionally close sidebar when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!collapse.contains(event.target) && !toggler.contains(event.target)) {
+            collapse.classList.remove('show');
         }
     });
 });

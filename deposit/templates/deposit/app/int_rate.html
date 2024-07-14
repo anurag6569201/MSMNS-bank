@@ -8,89 +8,97 @@
         border-collapse: collapse;
         font-size: 14px;
     }
-    table, th, td {
+
+    table,
+    th,
+    td {
         border: 1px solid black;
     }
-    th, td {
+
+    th,
+    td {
         padding: 8px;
         text-align: center;
     }
-    .saving-deposit{
+
+    .saving-deposit {
         font-size: 14px;
     }
 </style>
 <div class="container mt-4">
-    <table>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Term</th>
-                <th>Interest Rate from 01.09.2021</th>
-                <th>Interest Rate from 01.05.2023</th>
-                <th>Interest Rate from 01.09.2023</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>15 days to 45 days</td>
-                <td>2.50%</td>
-                <td>2.50%</td>
-                <td>2.50%</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>46 days to 90 days</td>
-                <td>3.00%</td>
-                <td>3.00%</td>
-                <td>3.00%</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>91 days to 180 days</td>
-                <td>3.50%</td>
-                <td>3.75%</td>
-                <td>3.75%</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>181 days to less than 1 year</td>
-                <td>4.00%</td>
-                <td>4.25%</td>
-                <td>4.25%</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>1 year to less than 2 years</td>
-                <td>4.90%</td>
-                <td>6.00%</td>
-                <td>6.80%</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>2 years to less than 3 years</td>
-                <td>5.00%</td>
-                <td>6.10%</td>
-                <td>7.00%</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>3 years to less than 5 years</td>
-                <td>5.30%</td>
-                <td>6.25%</td>
-                <td>6.50%</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>5 years and above</td>
-                <td>5.40%</td>
-                <td>5.40%</td>
-                <td>6.30%</td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="saving-deposit">"The annual interest rate for savings deposit account is 2%."</p>
-    <p class="saving-deposit">Senior citizens will be given an additional 0.50% interest on fixed deposits.</p>
+    <div class="int_rate_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Term</th>
+                    <th>Interest Rate from 01.09.2021</th>
+                    <th>Interest Rate from 01.05.2023</th>
+                    <th>Interest Rate from 01.09.2023</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>15 days to 45 days</td>
+                    <td>2.50%</td>
+                    <td>2.50%</td>
+                    <td>2.50%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>46 days to 90 days</td>
+                    <td>3.00%</td>
+                    <td>3.00%</td>
+                    <td>3.00%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>91 days to 180 days</td>
+                    <td>3.50%</td>
+                    <td>3.75%</td>
+                    <td>3.75%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>181 days to less than 1 year</td>
+                    <td>4.00%</td>
+                    <td>4.25%</td>
+                    <td>4.25%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>1 year to less than 2 years</td>
+                    <td>4.90%</td>
+                    <td>6.00%</td>
+                    <td>6.80%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2 years to less than 3 years</td>
+                    <td>5.00%</td>
+                    <td>6.10%</td>
+                    <td>7.00%</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>3 years to less than 5 years</td>
+                    <td>5.30%</td>
+                    <td>6.25%</td>
+                    <td>6.50%</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>5 years and above</td>
+                    <td>5.40%</td>
+                    <td>5.40%</td>
+                    <td>6.30%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="saving-deposit">"The annual interest rate for savings deposit account is 2%."</p>
+        <p class="saving-deposit">Senior citizens will be given an additional 0.50% interest on fixed deposits.</p>
+    </div>
 </div>
 
 {% endblock index %}
