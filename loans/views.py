@@ -1,13 +1,13 @@
 from django.shortcuts import render
 
 def property(request):
-    context={
-
-    }
-    return render(request, "loan/app/property.html", context)
+    return render(request, "loan/app/property.html")
 
 def home(request):
-    context={
+    return render(request, "loan/app/home.html")
 
-    }
-    return render(request, "loan/app/home.html", context)
+def emi_tool(request):
+    return render(request, "loan/app/emi_tool.html")
+
+def fd_tool(request):
+    return render(request, "loan/app/fd_tool.html")
