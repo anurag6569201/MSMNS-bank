@@ -27,6 +27,7 @@ urlpatterns = [
     path('info/',include('aboutus.urls')),
     path('inoperate/',include('inoperate.urls')),
     path('loan/',include('loans.urls')),
+    path('deposit/',include('deposit.urls')),
 
     # captcha url
     path('captcha/', include('captcha.urls')),

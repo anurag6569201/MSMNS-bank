@@ -102,10 +102,11 @@
                         Deposite
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item font_resizer" href="#">Saving A/C</a></li>
+                        <li><a class="dropdown-item font_resizer" href="">Saving A/C</a></li>
                         <li><a class="dropdown-item font_resizer" href="#">Current A/C</a></li>
                         <li><a class="dropdown-item font_resizer" href="#">Fixed Diposite / Double Diposite</a></li>
                         <li><a class="dropdown-item font_resizer" href="#">Recurring Deposit</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'deposit:int_rate' %}">Deposit Interest Rate</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -130,7 +131,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Statutory Decl
+                        Annual Report
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item font_resizer" href="#">Balance Sheet</a></li>
