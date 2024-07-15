@@ -6,6 +6,7 @@ app_name="inoperate"
 urlpatterns=[
     path("",views.inoperate,name="inoperate"),
     path("DEAF",views.view_full_deaf,name="view_full_deaf"),
+    path("ifsc",views.ifsc_code,name="ifsc_code"),
 
     # authentication urls
     path('sign-in/',views.login_view,name='sign-in'),

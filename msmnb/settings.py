@@ -24,10 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dd2c7q)8h(!o=82l!lnzbgfd_2j^r729bo4g6v(++*#qiiayp%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://msmnb.azurewebsites.net','https://127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://msmns.azurewebsites.net/','https://127.0.0.1']
 
 
 # Application definition

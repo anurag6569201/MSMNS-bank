@@ -3,17 +3,18 @@ const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
+    loop:true,
     autoplay: {
         delay: 2500, slidesPerView: 1,
         disableOnInteraction: false
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".mySwiper-swiper-pagination",
         clickable: true
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".mySwiper-swiper-button-next",
+        prevEl: ".mySwiper-swiper-button-prev"
     },
     on: {
         autoplayTimeLeft(s, time, progress) {
@@ -29,12 +30,12 @@ var swiper = new Swiper(".mySwipernew", {
     speed: 800,
     loop: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".mySwipernew-swiper-pagination",
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".mySwipernew-swiper-button-next",
+        prevEl: ".mySwipernew-swiper-button-prev",
     },
     breakpoints: {
         560: {

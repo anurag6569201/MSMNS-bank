@@ -9,6 +9,8 @@ from django.conf import settings
 from django.contrib.auth import logout
 
 User=settings.AUTH_USER_MODEL
+def ifsc_code(request):
+    return render(request, "inoperate/app/ifsc_code.html")
 
 def inoperate(request):
     no_of_account = Person.objects.all().count()

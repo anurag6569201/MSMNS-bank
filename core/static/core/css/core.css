@@ -3,18 +3,43 @@
     --background-pink-shade: #fdbd30;
     --background-blue-shade: #13a9e1;
 }
+
 [data-theme="dark"] {
-    --background: #353535;
+    --background: #000000;
     --background-pink-shade: #fdbd30;
     --background-blue-shade: #13a9e1;
     --text-color: #ffffff;
 }
-body{
+
+[data-theme="dark"] th {
+    background-color: #3a3a3a !important;
+    color: rgb(155, 155, 155);
+}
+
+[data-theme="dark"] td {
+    color: rgb(155, 155, 155);
+}
+
+[data-theme="dark"] tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+[data-theme="dark"] body {
+    color: grey;
+}
+
+[data-theme="dark"] .card-body {
+    color: grey;
+    border: 1px solid grey;
+}
+
+body {
     font-size: 10px;
     background-color: var(--background);
     top: 0 !important;
 }
-body *.card{
+
+body *.card {
     background-color: transparent;
 }
 
@@ -32,24 +57,35 @@ footer {
 .VIpgJd-yAWNEb-L7lbkb,
 .VIpgJd-ZVi9od-ORHb-OEVmcd,
 .VIpgJd-ZVi9od-l4eHX-hSRGPd,
-.goog-logo-link{
+.goog-logo-link {
     display: none !important;
 }
-.goog-te-gadget{
+
+.goog-te-gadget {
     color: transparent !important;
     position: relative;
 }
-.goog-te-combo{
+
+.goog-te-combo {
     position: absolute;
 }
-.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q{
+
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
     background-color: transparent !important;
     box-shadow: none;
 }
 
-
-.error-messages-inoperate{
-    position: fixed;
-    top: 1em;
-    right: 1em;
+.card {
+    -webkit-box-shadow: 13px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 13px 33px 0px rgba(0, 0, 0, 0.75);
+}
+.mySwiper{
+    -webkit-box-shadow: 13px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 13px 13px 33px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 1em;
+}
+.swiper.mySwipernew{
+    overflow:visible;
 }
