@@ -112,7 +112,7 @@ function loadGoogleTranslate() {
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'hi',
+        includedLanguages: 'en,hi',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
     }, 'google_element');
 }
