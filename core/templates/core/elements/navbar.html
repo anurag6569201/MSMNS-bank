@@ -78,26 +78,26 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Bank Network
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item font_resizer" href="#">Bank Branches</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Bank Branches' %}">Bank Branches</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Loans
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item font_resizer" href="{% url 'loans:home' %}">Home Loan</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">Vehicle Loan</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">Education Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Vehicle Loan' %}">Vehicle Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Education Loan' %}">Education Loan</a></li>
                         <li><a class="dropdown-item font_resizer" href="{% url 'loans:property' %}">Property/Mortgage
                                 Loan</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">MSME Loan</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'MSME Loan' %}">MSME Loan</a></li>
                         <li><a class="dropdown-item font_resizer" href="{% url 'loans:emi_tool' %}">EMI Calculator</a>
                         </li>
                         <li><a class="dropdown-item font_resizer" href="{% url 'loans:fd_tool' %}">FD Maturity
@@ -105,15 +105,15 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Deposite
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item font_resizer" href="">Saving A/C</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">Current A/C</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">Fixed Diposite / Double Diposite</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">Recurring Deposit</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Saving AC' %}">Saving A/C</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Current AC' %}">Current A/C</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Fixed Diposite' %}">Fixed Diposite / Double Diposite</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Recurring Deposit' %}">Recurring Deposit</a></li>
                         <li><a class="dropdown-item font_resizer" href="{% url 'deposit:int_rate' %}">Deposit Interest
                                 Rate</a></li>
                     </ul>
@@ -123,23 +123,23 @@
                         Funds</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font_resizer" aria-current="page" href="#">ATM SERVICES</a>
+                    <a class="nav-link font_resizer" aria-current="page" href="{% url 'core:underwork' 'ATM SERVICES' %}">ATM SERVICES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link font_resizer" aria-current="page" href="{% url 'inoperate:ifsc_code' %}">IFSC/MICR Code</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Annual Report
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item font_resizer" href="#">Balance Sheet</a></li>
-                        <li><a class="dropdown-item font_resizer" href="#">Profit & Loss</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Balance Sheet' %}">Balance Sheet</a></li>
+                        <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Profit & Loss' %}">Profit & Loss</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font_resizer" aria-current="page" href="#">Contact Us</a>
+                    <a class="nav-link font_resizer" aria-current="page" href="{% url 'core:underwork' 'Contact Us' %}">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -163,7 +163,7 @@
                         <a class="nav-link font_resizer" aria-current="page" href="{% url 'core:index' %}">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             About Us
                         </a>
@@ -185,26 +185,26 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Bank Network
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item font_resizer" href="#">Bank Branches</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Bank Branches' %}">Bank Branches</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Loans
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item font_resizer" href="{% url 'loans:home' %}">Home Loan</a></li>
-                            <li><a class="dropdown-item font_resizer" href="#">Vehicle Loan</a></li>
-                            <li><a class="dropdown-item font_resizer" href="#">Education Loan</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Vehicle Loan' %}">Vehicle Loan</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Education Loan' %}">Education Loan</a></li>
                             <li><a class="dropdown-item font_resizer" href="{% url 'loans:property' %}">Property/Mortgage
                                     Loan</a></li>
-                            <li><a class="dropdown-item font_resizer" href="#">MSME Loan</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'MSME Loan' %}">MSME Loan</a></li>
                             <li><a class="dropdown-item font_resizer" href="{% url 'loans:emi_tool' %}">EMI Calculator</a>
                             </li>
                             <li><a class="dropdown-item font_resizer" href="{% url 'loans:fd_tool' %}">FD Maturity
@@ -212,15 +212,15 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Deposite
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item font_resizer" href="">Saving A/C</a></li>
-                            <li><a class="dropdown-item font_resizer" href="#">Current A/C</a></li>
-                            <li><a class="dropdown-item font_resizer" href="#">Fixed Diposite / Double Diposite</a></li>
-                            <li><a class="dropdown-item font_resizer" href="#">Recurring Deposit</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Saving AC' %}">Saving A/C</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Current AC' %}">Current A/C</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Fixed Diposite' %}">Fixed Diposite / Double Diposite</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Recurring Deposit' %}">Recurring Deposit</a></li>
                             <li><a class="dropdown-item font_resizer" href="{% url 'deposit:int_rate' %}">Deposit Interest
                                     Rate</a></li>
                         </ul>
@@ -230,23 +230,23 @@
                             Funds</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font_resizer" aria-current="page" href="#">ATM SERVICES</a>
+                        <a class="nav-link font_resizer" aria-current="page" href="{% url 'core:underwork' 'ATM SERVICES' %}">ATM SERVICES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font_resizer" aria-current="page" href="{% url 'inoperate:ifsc_code' %}">IFSC/MICR Code</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle font_resizer" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle font_resizer" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Annual Report
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item font_resizer" href="#">Balance Sheet</a></li>
-                            <li><a class="dropdown-item font_resizer" href="#">Profit & Loss</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Balance Sheet' %}">Balance Sheet</a></li>
+                            <li><a class="dropdown-item font_resizer" href="{% url 'core:underwork' 'Profit & Loss' %}">Profit & Loss</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font_resizer" aria-current="page" href="#">Contact Us</a>
+                        <a class="nav-link font_resizer" aria-current="page" href="{% url 'core:underwork' 'Contact Us' %}">Contact Us</a>
                     </li>
                 </ul>
             </div>
