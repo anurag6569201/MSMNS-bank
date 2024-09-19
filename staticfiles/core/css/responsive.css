@@ -1,0 +1,109 @@
+@media (max-width:560px){
+    /* top most navbar */
+    .bank-navbar-logo img{
+        display: none;
+    }
+    .topmost-navbar{
+        justify-content: right;
+        font-size: 6px;
+        gap: 1em;
+    }
+    .sitemap, .datetime {
+        display: none;
+    }
+    .bank-navbar-address {
+        margin-top: 1em;
+        line-height: 18px;
+    }
+    /* mainnavbar */
+    .pc-navbar{
+        display: none;
+    }
+    .mobile-navbar{
+        display: block;
+    }
+    .main-navbar .navbar-links-tag {
+        gap: 0.3em;
+    }
+
+    /* swiper css */
+    .swiper{
+        height: auto;
+    }
+    .swiper-slide img{
+        object-fit: contain;
+    }
+    
+    /* message headings */
+    .content-home .message-headlines{
+        margin-top: 1em;
+    }
+
+    /* bank buttons */
+    .bank-buttons{
+        padding: 0;
+    }
+
+    /* bank buttons containers */
+    .bank-buttons-details div{
+        font-size: 9px;
+    }
+    .bank-buttons-details .directors,
+    .bank-buttons-details .chairman-message,
+    .saving-deposit{
+        font-size: 14px !important;
+    }
+    .bank-buttons-details .directors .card-text{
+        font-size: 12px;
+    }
+
+
+    /* profile page */
+    .aboutmain .img-fluid {
+        max-width: 70%;
+        border-radius: 0.5rem;
+    }
+    .aboutmain .col-lg-9 h5{
+        margin-top: 1em;
+    }
+
+
+    /* loan page */
+    .homeloan div{
+        font-size: 14px;
+    }
+    .table-container-doc-loan{
+        overflow: scroll;
+    }
+
+
+    /* deposit */
+    .int_rate_table{
+        overflow: scroll;
+    }
+
+
+    /* deaf scheme */
+    .inoperative .inoperate-search-text{
+        top: 0;
+    }
+    .inoperative{
+        gap: 1.7em;
+        margin: 0;
+    }
+
+
+    /* full deaf */
+    .full_deaf .table{
+        font-size: 7px;
+    }
+    .userauths .userauths-form{
+        width: 80%;
+    }
+    .userauths .logo-contain{
+        margin-bottom: 1em;
+    }
+    .userauths .form-group input{
+        width: 100%;
+    }
+}

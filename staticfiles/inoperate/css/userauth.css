@@ -1,0 +1,31 @@
+.userauths{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.userauths-form{
+    width: 50%;
+}
+.userauths .logo-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userauths .logo img{
+    width: 20em;
+}
+.form-group p{
+    font-size: 1.4em;
+    color: var(--background-blue-shade);
+    font-weight: 700;
+}
+.form-group input{
+    border: 1px solid grey;
+    background-color: transparent;
+    color: var(--background-blue-shade);
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}

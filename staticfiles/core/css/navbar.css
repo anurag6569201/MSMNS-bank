@@ -1,0 +1,221 @@
+.navbar-container{
+    background-color: var(--background-blue-shade);
+    display: flex;
+    align-items:normal;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    z-index: 1005;
+    position: relative;
+    box-shadow: 0 0 15px 1px #002d5e;
+}
+.mobile-navbar{
+    display: none;
+}
+#offcanvasNavbar{
+    background-color: var(--background-pink-shade);
+}
+.navbar-container-wrapper{
+    width: 100%;
+}
+footer,
+.navbar-container-wrapper *.font_resizer{
+    color: #ffffff;
+}
+.topmost-navbar{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    gap:2em;
+    padding: .5em 1.5em;
+    width: 100%;
+}
+.google-translating-buttons button,
+.textsize button {
+    border: 1.5px solid grey;
+    border-radius: .5em;
+    background-color: var(--background);
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--background-blue-shade);
+}
+
+/* themebutton */
+.btn-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btn-container i {
+    display: inline-block;
+    position: relative;
+    top: -.9em;
+}
+
+label {
+    font-size: 1.3em;
+    color: #424242;
+    font-weight: 500;
+}
+
+.btn-color-mode-switch {
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner {
+    margin: 0px;
+    width: 10.7em;
+    height: 2em;
+    background: #E0E0E0;
+    border-radius: 2.6em;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;
+    display: block;
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:before {
+    content: attr(data-on);
+    position: absolute;
+    font-weight: 500;
+    top: 4px;
+    color: var(--background-blue-shade);
+    right: 1em;
+}
+
+.btn-color-mode-switch>label.btn-color-mode-switch-inner:after {
+    content: attr(data-off);
+    width: 6.5em;
+    height: 1.65em;
+    background: #fff;
+    border-radius: 2.6em;
+    position: absolute;
+    color: var(--background-blue-shade);
+    left: .2em;
+    top: .2em;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    padding: 1px 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"] {
+    cursor: pointer;
+    width: 9em;
+    height: 2.5em;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 3em;
+    z-index: 1;
+    margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner {
+    background: #151515;
+    color: white;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:after {
+    content: attr(data-on);
+    left: 68px;
+    background: #3c3c3c;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked+label.btn-color-mode-switch-inner:before {
+    content: attr(data-off);
+    left: 1em;
+    top: .3em;
+    right: auto;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked~.alert {
+    display: block;
+}
+
+.dark-preview {
+    color: white;
+    background: #0d0d0d;
+}
+
+.white-preview {
+    background: #fff;
+}
+
+/* datetime */
+.sitemap,
+.datetime{
+    font-weight: 700;
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+}
+.sitemap:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------center navbar------------------------------ */
+/* --------------------------------------------------------------------------- */
+.center-navbar{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    padding: .0em 1em;
+}
+.bank-navbar-logo img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.bank-navbar-title{
+    font-size: 3em;
+    font-weight: 900;
+    text-align: left;
+}
+.bank--navbar-details{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    line-height: 3em;
+    justify-content: left;
+}
+.bank-navbar-address{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------main navbar------------------------------ */
+/* --------------------------------------------------------------------------- */
+
+.main-navbar{
+    background-color: var(--background-pink-shade);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 15px 2px #002d5e;
+}
+.main-navbar .navbar-links-tag{
+    gap: 1.3em;
+}
+.main-navbar .nav-link.active,
+.main-navbar .nav-link{
+    font-size: 1.4em;
+    color: var(--background);
+    font-weight: 600;
+}
+.dropdown .show{
+    color: var(--background)!important;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}

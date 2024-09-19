@@ -1,0 +1,78 @@
+.alert-heading{
+    background-color: rgb(204, 94, 94);
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
+.inoperate-info{
+    font-size: 1.4em;
+}
+.search-form-inoperate p{
+    display: flex;
+    flex-direction: column;
+}
+.search-form-inoperate p input,
+.search-form-inoperate p label{
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.search-form-inoperate p input{
+    color: rgb(82, 82, 82);
+    padding: .3em;
+}
+.search-form-inoperate p .captcha{
+    width: 100px;
+}
+.Download_pdf,
+.btn-login,
+.full_deaf_vew_btn,
+.search-form-inoperate button{
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    background-color: var(--background);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--background-blue-shade);
+}
+.Download_pdf,
+.full_deaf_vew_btn{
+    text-decoration: none;
+    padding: .2em .8em;
+}
+.inoperate-search-text{
+    font-size: 1.8em;
+    font-weight: 600;
+    position: absolute;
+    top: 2em;
+}
+.inoperative_details li{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.inoperative_details li{
+    list-style: none;
+}
+.table-row-heading-flex{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: .5em;
+}
+.table thead tr th,
+.inoperative_account,
+.inoperative_amount,
+.inoperative_name{
+    font-size: 1.6em;
+}
+.table th, .table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+}
+.inoperative .section{
+    font-size: 1.4em;
+}
+.full_deaf .serial_num{
+    font-size: 1.4em;
+}
