@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'loans',
     'deposit',
     'compressor',
+    'htmlmin', # html minify for production
 ]
 
 MIDDLEWARE = [
@@ -62,8 +63,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware", # deployment middleware
+
+    # html minify for production
+    'htmlmin.middleware.HtmlMinifyMiddleware',
+    'htmlmin.middleware.MarkRequestMiddleware',
 ]
 
+HTML_MINIFY = True 
 ROOT_URLCONF = 'msmnb.urls'
 
 TEMPLATES = [
